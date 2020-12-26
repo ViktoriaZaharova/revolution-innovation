@@ -1,0 +1,812 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+
+button
+  outline: none
+  padding: 0
+  box-sizing: border-box
+  transition: .3s ease  
+
+.container
+  width: 100%
+  max-width: 1440px
+  padding: 0 10px
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  margin: 0 auto
+
+.logo
+  max-width: 263px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 35px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 55px
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover
+        opacity: 0.8
+
+h2
+  width: 100%
+  text-transform: uppercase
+  margin: 0 0 19px
+  font-size: 30px        
+
+h4
+  width: 100%
+  margin: 0 0 20px
+  font-size: 20px
+  font-family: $font
+  font-weight: bold
+
+// .header
+header
+  background: linear-gradient(180deg, rgba(0, 163, 211, 0.25) 0%, rgba(0, 0, 0, 0) 45.31%)
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+  .container
+    padding: 0 33px 0 0
+    justify-content: space-between
+    align-items: center
+
+.header
+  background: linear-gradient(180deg, rgba(0, 163, 211, 0.25) 0%, rgba(0, 0, 0, 0) 45.31%)
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+  
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 22px
+  font-family: $font
+  margin: 0 auto
+  li
+    margin: 0 46px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #000000
+    .active
+      text-decoration: underline  
+
+.mail
+  text-decoration-line: underline
+  font-size: 20px
+  font-weight: bold
+  color: #000
+  font-family: $font
+  margin: 0 12px 0 0
+
+// main-home
+.main-home
+  margin: 0 0 31px
+
+main
+  .container
+    padding: 0  
+
+.main-slider
+  width: calc(100% - 273px)
+  .slide
+    height: 500px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.slick-slide
+  outline: none      
+
+.nav-main
+  max-width: 273px
+  width: 100%
+  font-size: 12px
+  font-family: $font
+  li
+    width: 100%
+    a    
+      padding: 0 10px
+      color:#000
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      text-align: center
+      border: 1px solid rgba(0, 163, 211, 0.25)
+      background: rgba(0, 0, 0, 0.1)
+      height: 100px
+      width: 100%
+      -webkit-text-stroke-width: 0.3px
+      -webkit-text-stroke-color: rgba(0, 0, 0, 0.5)
+
+.nav-main__text
+  display: block
+  text-align: center
+  margin: 0 auto 7px
+  
+
+// .news
+.news
+  margin: 0 0 31px 0
+  .wrapper
+    justify-content: space-between
+
+.news-box
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6)
+  width: 18%
+  height: 230px
+  background: rgba(255, 255, 255, 0.75)
+  border: 2px dashed #00A3D3  
+
+.wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  
+// .strategy
+.strategy
+  margin: 0 0 19px
+  h2
+    margin: 0 0 11px
+  .container
+    padding: 0 20px
+
+.strategy-wrapper
+  position: relative
+  align-items: flex-end
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    height: 8px  
+    width: 962px
+    background: $accent
+
+.strategy-box
+  width: 510px
+  position: relative
+  margin: 0 95px 0 -100px
+  display: flex
+  flex-direction: column
+  font-size: 25px
+  padding: 0 0 0 48px
+  &:first-child
+    margin: 0 95px 0 0
+  &:nth-child(even)
+    order: 1
+    flex-direction: column-reverse
+    .strategy-box__num
+      bottom: auto
+      top: -35px
+    .strategy-box__text
+        border: none
+          top: 8px solid #00A3D3
+        &::before
+          top: auto
+          bottom: 92%
+          left: -50px
+          transform: rotate(-26deg)  
+    .strategy-box__icon
+      margin: 30px 113px 16px auto  
+  &:nth-child(2)
+    margin: 0 126px 0 295px   
+    .strategy-box__icon
+      max-width: 136px
+  &:last-child
+    margin: 0 -300px 0 0   
+    .strategy-box__icon
+      max-width: 218px
+      height: 148px
+  &:nth-child(3)
+    margin: 0
+    .strategy-box__icon
+      max-width: 153px
+      margin: 0 118px 49px auto
+    .strategy-box__text
+      margin: -29px 0 0 auto  
+      &::before
+        top: 94%
+
+.strategy-box__num
+  position: absolute
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  background: $accent
+  font-size: 30px
+  color: #fff
+  width: 75px
+  height: 75px
+  left: 0
+  bottom: -35px
+
+.strategy-box__text
+  max-width: 374px
+  width: 100%
+  text-align: center
+  margin: 0 0 0 auto
+  border-bottom: 8px solid #00A3D3
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: 8px
+    height: 223px
+    background: $accent
+    transform: rotate(26deg)
+    left: -50px
+    top: 92%
+    
+
+.strategy-box__icon
+  margin: 0 84px 13px auto
+  max-width: 180px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center  
+  img
+    width: 100%
+
+// footer
+footer
+  position: relative
+  padding: 4px 0
+  background: #EFEDF0
+  color: #777777
+  font-size: 15px
+  line-height: 20px
+  font-family: $font
+  &::before
+    content: ''
+    position: absolute
+    left: 
+    top: 3px
+    width: 100%
+    height: 1px 
+    background:#C7C5C8
+  .container
+    justify-content: space-between
+    align-items: center
+  a
+    color: #777777
+  
+.copyright
+  color: #424242
+
+.footer-box:last-child
+  text-align: right  
+
+.btn-burger
+  width: 20px
+  height: 14px
+  display: none
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  span
+    display: block
+    width: 100%
+    height: 1px
+    background: $accent  
+
+.mobile-menu
+  display: none
+  position: fixed
+  z-index: 7
+  background: #fff
+  left: 0
+  top: 0
+  height: 100%
+  max-width: 290px
+  width: 100%
+  padding: 30px 20px
+  overflow-y: auto
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6)
+  .menu
+    margin: 0 0 20px
+    li
+      width: 100%
+      margin: 0 0 20px
+
+.btn-close
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  width: 20px
+  height: 20px
+  cursor: pointer
+  margin: 0 0 20px auto
+  &:before, &::after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 
+    width: 1px
+    height: 100%
+    background: $accent
+  &::before
+    transform: rotate(45deg)
+  &::after
+    transform: rotate(135deg)          
+
+// about
+.about
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  font-size: 20px
+  font-family: $font
+  .container
+    padding: 0 60px
+
+.table-wrapper
+  margin: 60px 0
+  width: 100%
+  overflow-x: auto
+
+table
+  border: 1px solid #828282
+    radius: 4px
+  max-width: 750px
+  width: 100%
+  margin: 0 auto   
+
+tr
+  border-bottom: 1px solid #828282 
+
+td
+  padding: 8px 5px 8px 12px
+  border-right: 1px solid #828282  
+  &:last-child
+    border: none
+  &:first-child
+    width: 250px
+    text-align: center  
+
+.about-history
+  margin: 56px 0 100px
+  
+.about-history-wrapper
+  position: relative
+  align-items: flex-start
+  &::before
+    content: ''
+    position: absolute
+    left: -10px
+    top: 50%
+    transform: translate(0,-50%)
+    height: 6px
+    max-width: 1116px
+    width: 100%
+    background: rgba(0, 0, 0, 0.1)
+    
+.about-history-box
+  position: relative
+  max-width: 300px
+  padding: 0 0 0 20px
+  width: 100%
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  font-size: 20px
+  font-family: $font
+  margin: 0 170px 0 0
+  height: 334px
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 4px
+    height: 300px
+    background: rgba(0, 0, 0, 0.1)
+  &::after
+    content: ''
+    position: absolute
+    background: #C2E6F1
+    width: 35px
+    height: 35px
+    transform: rotate(-45deg)
+    left: -16px
+    bottom: -17px  
+  &:first-child
+    margin: 0 170px 0 130px  
+  &:nth-child(2), &:nth-child(4)
+    order: 1
+    padding: 37px 0 0 20px
+    &::before
+      bottom: auto
+      top: 0
+    &::after
+      bottom: auto
+      top: -17px   
+  &:nth-child(3)
+    margin: 0 200px 0 0
+    .figure
+      border-color: #73D0EC
+    .about-history-box__year
+      font-size: 30px
+    &:after
+      background: #73D0EC  
+  &:last-child
+    margin: 0
+    padding: 0 0 0 30px
+    .about-history-box__year
+      margin: 0 0 10px 20px
+    &::after
+      background: #00A3D3  
+  &:nth-child(2)
+    margin: 0 250px 0 270px
+    &::after
+      background: #A1D4E2
+    .figure
+      border-color: #A1D4E2
+  &:nth-child(4)
+    margin: 0 28px 0 0
+    .figure
+      border-color: #5BBCD9
+    &::after
+      background:#5BBCD9
+      
+        
+    
+
+.about-history-box__description
+  min-height: 187px 
+  max-width: 250px   
+
+.about-history-box__year
+  font-size: 48px
+  width: 150px
+  height: 100px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  margin: 0 0 10px
+  position: relative
+  font-weight: bold
+  span
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    transform: rotate(-45deg)
+    color: #FFFFFF
+    display: inline-block
+    position: relative
+    z-index: 1
+    -webkit-text-stroke-width: 0.5px
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5) 
+
+.figure
+  filter: blur(4px)
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  box-sizing: border-box
+  border: 50px solid #C2E6F1
+  width: 103px
+  height: 80px 
+  position: absolute
+  left: 50%
+  top: 0
+  transform: skewX(-20deg) translate(-50%,0)
+
+.about-history-box__img
+  filter: blur(3px)
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  box-sizing: border-box
+  transform: skewX(-20deg) translate(-50%,0)
+  top: 0
+  left: 50%
+  position: absolute
+  display: inline-block
+    
+
+// page directions
+.main
+  width: 100%
+  position: relative
+  max-height: 500px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.main-directions
+  &::before
+    background: linear-gradient(180deg, rgba(228, 108, 10, 0.25) 0%, rgba(228, 108, 10, 0) 100%)
+
+.m-20
+  margin: 20px 0
+
+.category-productions
+  .wrapper
+    justify-content: space-between
+    align-items: stretch
+
+.category-productions__box
+  max-width: 23.5%
+  position: relative
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  text-transform: uppercase
+  padding: 10px
+  font-size: 22px
+  font-weight: bold
+  flex-flow: $font
+  height: 264px
+  overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(255, 127, 0, 0.6), rgba(255, 127, 0, 0.6))
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover   
+
+.category-productions__name
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 100%
+
+// partners
+.partners
+  h2
+    font-size: 20px
+  .wrapper
+    justify-content: space-around
+
+.fancybox-item
+  max-width: 500px
+  border: 1px solid #000000
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 69px
+  &:first-child
+    max-width: 350px      
+
+// partners-company
+.partners-company
+  h2
+    margin: 0 0 62px
+
+.partners-company__logo
+  height: 80px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 12.5%
+  img
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))  
+    max-height: 100%  
+
+// .tasks
+.tasks
+  margin: 62px 0 20px
+
+.tasks-wrapper
+  width: 100%
+  background: radial-gradient(50% 50% at 50% 50%, rgba(63, 178, 220, 0.25) 0%, rgba(255, 255, 0, 0.0625) 0.01%, rgba(228, 108, 10, 0.25) 100%)
+  mix-blend-mode: multiply  
+  padding: 8px 0
+
+.tasks-item
+  width: 100%
+  font-size: 20px
+  font-family: $font
+  font-weight: bold
+  border: 
+    top: 1px solid #C7C5C8
+  &:last-child
+    border: 
+      bottom: 1px solid #C7C5C8
+  .container
+    padding: 33px 60px 30px 120px
+    align-items: center
+  &:nth-child(even)
+    .container
+      padding: 33px 120px 30px 60px
+    .tasks-item__content
+      padding: 0 60px 0 0
+      order: -1
+          
+
+.tasks-item__img
+  display: flex
+  flex-direction: column
+  text-align: center
+  align-items: center
+  justify-content: flex-start
+  max-width: 600px
+  width: 100%
+  h4
+    margin: 0 auto 
+    text-decoration: underline
+  img
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))      
+    max-height: 260px
+    width: 100%
+    object-fit: cover
+
+.tasks-item__content
+  width: calc(100% - 600px)
+  padding: 0 0 0 60px 
+
+// working-conditions
+.working-conditions
+  margin: 0 0 30px
+  .wrapper
+    justify-content: space-between
+    align-items: stretch
+
+.working-conditions__box
+  text-align: center
+  margin: 0 0 30px
+  
+  background: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 400px
+  min-height: 267px
+  width: 100%
+  position: relative
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 20px
+  font-family: $font
+  p
+    max-width: 215px
+    width: 100%
+    margin: 0 auto
+  &::before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    max-width: 300px
+    width: 100%
+    height: 100%
+    border: 2px dashed #FF7F00
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    transform: skewX(-20deg) translate(-50%,0)
+
+
+
+
+@import "media"
+// Всегда в конце
