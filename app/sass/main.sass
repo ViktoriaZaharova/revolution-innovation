@@ -109,7 +109,7 @@ button
 .container
   width: 100%
   max-width: 1440px
-  padding: 0 10px
+  padding: 0 20px
   display: flex
   flex-wrap: wrap
   position: relative
@@ -778,6 +778,8 @@ td
 .partners-company
   h2
     margin: 0 0 62px
+  h4
+    font-weight: normal
 
 .partners-company__logo
   height: 80px
@@ -921,6 +923,10 @@ td
   .wrapper
     padding: 0 10px 0 50px
     align-items: flex-start
+  .box-text
+    margin: 80px 0 20px
+    font-size: 20px
+    font-family: $default-font
 
 .complex-technology__img
   max-width: 200px
@@ -935,6 +941,9 @@ td
   h4
     font-weight: 700
     margin: 20px 0 0
+
+.text-shadow
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 
 .technology
 
@@ -1079,6 +1088,125 @@ td
     transform: translate(-50%,-50%)
     text-align: center
 
+//main-reinlight
+.main-reinlight
+  &:before
+    background: linear-gradient(180deg, rgba(0, 163, 211, 0.25) 0%, rgba(255, 255, 255, 0) 100%)
+
+.main-reinlight-about
+  margin: 60px 0 30px
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+  font-size: 20px
+
+//type-panel
+.type-panel
+  h4
+    font-weight: normal
+    text-decoration: underline
+    margin: 0 0 60px
+  .wrapper
+    background: #12CAD6
+  .box-text
+    margin: 40px 0
+    font-size: 20px
+
+.type-panel-item
+  color: #ffffff
+  text-align: center
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  min-height: 595px
+  &:nth-child(even)
+    .type-panel__img
+      order: 1
+
+.type-panel__img
+  width: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.type-panel__content
+  width: 50%
+  font-size: 22px
+  font-weight: bold
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.border-color-blue
+  &:before
+    border-color: $accent
+
+//main-reinsnab
+.main-reinsnab
+  &:before
+    background: linear-gradient(180deg, rgba(250, 22, 22, 0.25) 0%, rgba(255, 255, 255, 0) 100%)
+
+.we-supply
+  h4
+    font-weight: normal
+    text-decoration: underline
+    margin: 0 0 40px
+  .wrapper
+    justify-content: space-between
+    padding: 0 46px
+
+.we-supply-box
+  margin: 0 0 40px
+  background: rgba(250, 22, 22, 0.7)
+  height: 200px
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 18%
+  width: 100%
+  font-weight: 700
+  font-size: 15px
+  text-align: center
+  -webkit-text-stroke-width: 0.1px
+  -webkit-text-stroke-color: #000
+
+.advantages
+  margin: 60px 0
+  .container
+    align-items: stretch
+    justify-content: center
+
+.advantages-img
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 500px
+
+.advantages-content
+  color: #fff
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  max-width: 500px
+  width: 100%
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  background: rgba(250, 22, 22, 0.7)
+  font-size: 20px
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
 
 @import "media"
 // Всегда в конце
