@@ -68,7 +68,7 @@ body
   min-width: 320px
   position: relative
   line-height: normal
-  font-family: $default-font
+  font-family: $font
   font-weight: normal
 
 html, body
@@ -97,13 +97,14 @@ input, textarea, select
   appearance: none
   padding: 0
   box-sizing: border-box
-  font-family: $default-font
+  font-family: $font
 
 button
   outline: none
   padding: 0
   box-sizing: border-box
-  transition: .3s ease  
+  transition: .3s ease
+  font-family: $font
 
 .container
   width: 100%
@@ -125,15 +126,19 @@ button
   display: flex
   align-items: center
   flex-wrap: wrap
+
   li
     margin: 0 35px 0 0
+
     &:last-child
       margin: 0
+
     a
       width: 55px
       display: flex
       align-items: center
       justify-content: center
+
       &:hover
         opacity: 0.8
 
@@ -141,19 +146,20 @@ h2
   width: 100%
   text-transform: uppercase
   margin: 0 0 19px
-  font-size: 30px        
+  font-size: 30px
+  font-family: $default-font
 
 h4
   width: 100%
   margin: 0 0 20px
   font-size: 20px
-  font-family: $font
   font-weight: bold
 
 // .header
 header
   background: linear-gradient(180deg, rgba(0, 163, 211, 0.25) 0%, rgba(0, 0, 0, 0) 45.31%)
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+
   .container
     padding: 0 33px 0 0
     justify-content: space-between
@@ -162,30 +168,32 @@ header
 .header
   background: linear-gradient(180deg, rgba(0, 163, 211, 0.25) 0%, rgba(0, 0, 0, 0) 45.31%)
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
-  
+
 
 .menu
   display: flex
   align-items: center
   flex-wrap: wrap
   font-size: 22px
-  font-family: $font
   margin: 0 auto
+
   li
     margin: 0 46px 0 0
+
     &:last-child
       margin: 0
+
     a
       color: #000000
+
     .active
-      text-decoration: underline  
+      text-decoration: underline
 
 .mail
   text-decoration-line: underline
   font-size: 20px
   font-weight: bold
   color: #000
-  font-family: $font
   margin: 0 12px 0 0
 
 // main-home
@@ -194,31 +202,34 @@ header
 
 main
   .container
-    padding: 0  
+    padding: 0
 
 .main-slider
   width: calc(100% - 273px)
+
   .slide
     height: 500px
     overflow: hidden
+
     img
       width: 100%
       height: 100%
       object-fit: cover
 
 .slick-slide
-  outline: none      
+  outline: none
 
 .nav-main
   max-width: 273px
   width: 100%
   font-size: 12px
-  font-family: $font
+
   li
     width: 100%
-    a    
+
+    a
       padding: 0 10px
-      color:#000
+      color: #000
       display: flex
       flex-direction: column
       align-items: center
@@ -235,11 +246,12 @@ main
   display: block
   text-align: center
   margin: 0 auto 7px
-  
+
 
 // .news
 .news
   margin: 0 0 31px 0
+
   .wrapper
     justify-content: space-between
 
@@ -248,32 +260,35 @@ main
   width: 18%
   height: 230px
   background: rgba(255, 255, 255, 0.75)
-  border: 2px dashed #00A3D3  
+  border: 2px dashed #00A3D3
 
 .wrapper
   width: 100%
   display: flex
   align-items: center
   flex-wrap: wrap
-  
+
 // .strategy
 .strategy
   margin: 0 0 19px
+
   h2
     margin: 0 0 11px
+
   .container
     padding: 0 20px
 
 .strategy-wrapper
   position: relative
   align-items: flex-end
+
   &::before
     content: ''
     position: absolute
     left: 0
     top: 50%
-    transform: translate(0,-50%)
-    height: 8px  
+    transform: translate(0, -50%)
+    height: 8px
     width: 962px
     background: $accent
 
@@ -285,40 +300,55 @@ main
   flex-direction: column
   font-size: 25px
   padding: 0 0 0 48px
+  font-family: $default-font
+
   &:first-child
     margin: 0 95px 0 0
+
   &:nth-child(even)
     order: 1
     flex-direction: column-reverse
+
     .strategy-box__num
       bottom: auto
       top: -35px
+
     .strategy-box__text
-        border: none
-          top: 8px solid #00A3D3
-        &::before
-          top: auto
-          bottom: 92%
-          left: -50px
-          transform: rotate(-26deg)  
+      border: none
+        top: 8px solid #00A3D3
+
+      &::before
+        top: auto
+        bottom: 92%
+        left: -50px
+        transform: rotate(-26deg)
+
     .strategy-box__icon
-      margin: 30px 113px 16px auto  
+      margin: 30px 113px 16px auto
+
   &:nth-child(2)
-    margin: 0 126px 0 295px   
+    margin: 0 126px 0 295px
+
     .strategy-box__icon
       max-width: 136px
+
   &:last-child
-    margin: 0 -300px 0 0   
+    margin: 0 -300px 0 0
+
     .strategy-box__icon
       max-width: 218px
       height: 148px
+
   &:nth-child(3)
     margin: 0
+
     .strategy-box__icon
       max-width: 153px
       margin: 0 118px 49px auto
+
     .strategy-box__text
-      margin: -29px 0 0 auto  
+      margin: -29px 0 0 auto
+
       &::before
         top: 94%
 
@@ -344,6 +374,7 @@ main
   margin: 0 0 0 auto
   border-bottom: 8px solid #00A3D3
   position: relative
+
   &::before
     content: ''
     position: absolute
@@ -353,7 +384,7 @@ main
     transform: rotate(26deg)
     left: -50px
     top: 92%
-    
+
 
 .strategy-box__icon
   margin: 0 84px 13px auto
@@ -361,7 +392,8 @@ main
   width: 100%
   display: flex
   align-items: center
-  justify-content: center  
+  justify-content: center
+
   img
     width: 100%
 
@@ -373,26 +405,28 @@ footer
   color: #777777
   font-size: 15px
   line-height: 20px
-  font-family: $font
+
   &::before
     content: ''
     position: absolute
-    left: 
+    left:
     top: 3px
     width: 100%
-    height: 1px 
-    background:#C7C5C8
+    height: 1px
+    background: #C7C5C8
+
   .container
     justify-content: space-between
     align-items: center
+
   a
     color: #777777
-  
+
 .copyright
   color: #424242
 
 .footer-box:last-child
-  text-align: right  
+  text-align: right
 
 .btn-burger
   width: 20px
@@ -401,11 +435,12 @@ footer
   flex-direction: column
   align-items: center
   justify-content: space-between
+
   span
     display: block
     width: 100%
     height: 1px
-    background: $accent  
+    background: $accent
 
 .mobile-menu
   display: none
@@ -420,8 +455,10 @@ footer
   padding: 30px 20px
   overflow-y: auto
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6)
+
   .menu
     margin: 0 0 20px
+
     li
       width: 100%
       margin: 0 0 20px
@@ -435,24 +472,28 @@ footer
   height: 20px
   cursor: pointer
   margin: 0 0 20px auto
+
   &:before, &::after
     content: ''
     position: absolute
     left: 10px
-    top: 
+    top:
     width: 1px
     height: 100%
     background: $accent
+
   &::before
     transform: rotate(45deg)
+
   &::after
-    transform: rotate(135deg)          
+    transform: rotate(135deg)
 
 // about
 .about
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   font-size: 20px
   font-family: $font
+
   .container
     padding: 0 60px
 
@@ -466,37 +507,40 @@ table
     radius: 4px
   max-width: 750px
   width: 100%
-  margin: 0 auto   
+  margin: 0 auto
 
 tr
-  border-bottom: 1px solid #828282 
+  border-bottom: 1px solid #828282
 
 td
   padding: 8px 5px 8px 12px
-  border-right: 1px solid #828282  
+  border-right: 1px solid #828282
+
   &:last-child
     border: none
+
   &:first-child
     width: 250px
-    text-align: center  
+    text-align: center
 
 .about-history
   margin: 56px 0 100px
-  
+
 .about-history-wrapper
   position: relative
   align-items: flex-start
+
   &::before
     content: ''
     position: absolute
     left: -10px
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     height: 6px
     max-width: 1116px
     width: 100%
     background: rgba(0, 0, 0, 0.1)
-    
+
 .about-history-box
   position: relative
   max-width: 300px
@@ -507,6 +551,7 @@ td
   font-family: $font
   margin: 0 170px 0 0
   height: 334px
+
   &::before
     content: ''
     position: absolute
@@ -515,6 +560,7 @@ td
     width: 4px
     height: 300px
     background: rgba(0, 0, 0, 0.1)
+
   &::after
     content: ''
     position: absolute
@@ -523,52 +569,67 @@ td
     height: 35px
     transform: rotate(-45deg)
     left: -16px
-    bottom: -17px  
+    bottom: -17px
+
   &:first-child
-    margin: 0 170px 0 130px  
+    margin: 0 170px 0 130px
+
   &:nth-child(2), &:nth-child(4)
     order: 1
     padding: 37px 0 0 20px
+
     &::before
       bottom: auto
       top: 0
+
     &::after
       bottom: auto
-      top: -17px   
+      top: -17px
+
   &:nth-child(3)
     margin: 0 200px 0 0
+
     .figure
       border-color: #73D0EC
+
     .about-history-box__year
       font-size: 30px
+
     &:after
-      background: #73D0EC  
+      background: #73D0EC
+
   &:last-child
     margin: 0
     padding: 0 0 0 30px
+
     .about-history-box__year
       margin: 0 0 10px 20px
+
     &::after
-      background: #00A3D3  
+      background: #00A3D3
+
   &:nth-child(2)
     margin: 0 250px 0 270px
+
     &::after
       background: #A1D4E2
+
     .figure
       border-color: #A1D4E2
+
   &:nth-child(4)
     margin: 0 28px 0 0
+
     .figure
       border-color: #5BBCD9
+
     &::after
-      background:#5BBCD9
-      
-        
-    
+      background: #5BBCD9
+
 
 .about-history-box__description
-  min-height: 187px 
-  max-width: 250px   
+  min-height: 187px
+  max-width: 250px
 
 .about-history-box__year
   font-size: 48px
@@ -581,6 +642,7 @@ td
   margin: 0 0 10px
   position: relative
   font-weight: bold
+
   span
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
     transform: rotate(-45deg)
@@ -589,7 +651,7 @@ td
     position: relative
     z-index: 1
     -webkit-text-stroke-width: 0.5px
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5) 
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5)
 
 .figure
   filter: blur(4px)
@@ -597,22 +659,22 @@ td
   box-sizing: border-box
   border: 50px solid #C2E6F1
   width: 103px
-  height: 80px 
+  height: 80px
   position: absolute
   left: 50%
   top: 0
-  transform: skewX(-20deg) translate(-50%,0)
+  transform: skewX(-20deg) translate(-50%, 0)
 
 .about-history-box__img
   filter: blur(3px)
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
   box-sizing: border-box
-  transform: skewX(-20deg) translate(-50%,0)
+  transform: skewX(-20deg) translate(-50%, 0)
   top: 0
   left: 50%
   position: absolute
   display: inline-block
-    
+
 
 // page directions
 .main
@@ -623,6 +685,7 @@ td
   align-items: center
   justify-content: center
   overflow: hidden
+
   &::before
     content: ''
     position: absolute
@@ -630,6 +693,7 @@ td
     top: 0
     width: 100%
     height: 100%
+
   img
     width: 100%
     height: 100%
@@ -662,6 +726,7 @@ td
   flex-flow: $font
   height: 264px
   overflow: hidden
+
   &::before
     content: ''
     position: absolute
@@ -670,24 +735,33 @@ td
     width: 100%
     height: 100%
     background: linear-gradient(0deg, rgba(255, 127, 0, 0.6), rgba(255, 127, 0, 0.6))
+
   img
     width: 100%
     height: 100%
-    object-fit: cover   
+    object-fit: cover
 
 .category-productions__name
   position: absolute
   left: 50%
   top: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%)
   width: 100%
 
 // partners
 .partners
+  font-family: $font
+
   h2
     font-size: 20px
+
   .wrapper
     justify-content: space-around
+
+  p, ul
+    width: 100%
+    display: block
+
 
 .fancybox-item
   max-width: 500px
@@ -696,8 +770,9 @@ td
   align-items: center
   justify-content: center
   margin: 0 0 69px
+
   &:first-child
-    max-width: 350px      
+    max-width: 350px
 
 // partners-company
 .partners-company
@@ -710,9 +785,10 @@ td
   align-items: center
   justify-content: center
   width: 12.5%
+
   img
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))  
-    max-height: 100%  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    max-height: 100%
 
 // .tasks
 .tasks
@@ -721,7 +797,7 @@ td
 .tasks-wrapper
   width: 100%
   background: radial-gradient(50% 50% at 50% 50%, rgba(63, 178, 220, 0.25) 0%, rgba(255, 255, 0, 0.0625) 0.01%, rgba(228, 108, 10, 0.25) 100%)
-  mix-blend-mode: multiply  
+  mix-blend-mode: multiply
   padding: 8px 0
 
 .tasks-item
@@ -729,21 +805,25 @@ td
   font-size: 20px
   font-family: $font
   font-weight: bold
-  border: 
+  border:
     top: 1px solid #C7C5C8
+
   &:last-child
-    border: 
+    border:
       bottom: 1px solid #C7C5C8
+
   .container
     padding: 33px 60px 30px 120px
     align-items: center
+
   &:nth-child(even)
     .container
       padding: 33px 120px 30px 60px
+
     .tasks-item__content
       padding: 0 60px 0 0
       order: -1
-          
+
 
 .tasks-item__img
   display: flex
@@ -753,22 +833,25 @@ td
   justify-content: flex-start
   max-width: 600px
   width: 100%
+
   h4
-    margin: 0 auto 
+    margin: 0 auto
     text-decoration: underline
+
   img
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))      
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     max-height: 260px
     width: 100%
     object-fit: cover
 
 .tasks-item__content
   width: calc(100% - 600px)
-  padding: 0 0 0 60px 
+  padding: 0 0 0 60px
 
 // working-conditions
 .working-conditions
   margin: 0 0 30px
+
   .wrapper
     justify-content: space-between
     align-items: stretch
@@ -776,7 +859,6 @@ td
 .working-conditions__box
   text-align: center
   margin: 0 0 30px
-  
   background: #fff
   display: flex
   align-items: center
@@ -789,10 +871,12 @@ td
   font-weight: bold
   font-size: 20px
   font-family: $font
+
   p
     max-width: 215px
     width: 100%
     margin: 0 auto
+
   &::before
     content: ''
     position: absolute
@@ -803,9 +887,126 @@ td
     height: 100%
     border: 2px dashed #FF7F00
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-    transform: skewX(-20deg) translate(-50%,0)
+    transform: skewX(-20deg) translate(-50%, 0)
 
+//.directions 2
+.border-color-green
+  &:before
+    border-color: #00FF00
 
+.application-effect
+  margin: 10px 0 40px
+
+  h4
+    font-weight: normal
+    margin: 0 0 25px
+
+  img
+    width: 100%
+    max-width: 1040px
+    margin: 0 auto
+
+.list-dots
+  list-style-type: disc
+  padding: 0 0 0 20px
+
+.complex-technology
+  margin: 60px 0 20px
+
+  h4
+    font-weight: normal
+    font-size: 20px
+    margin: 0 0 60px
+
+  .wrapper
+    padding: 0 10px 0 50px
+    align-items: flex-start
+
+.complex-technology__img
+  max-width: 200px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.complex-technology__content
+  width: calc(100% - 200px)
+  padding: 0 0 0 40px
+
+  h4
+    font-weight: 700
+    margin: 20px 0 0
+
+.technology
+
+  h4
+    font-weight: normal
+    margin: 0 0 60px
+
+  .wrapper
+    justify-content: space-between
+
+.technology-box
+  text-align: center
+  max-width: 400px
+  min-height: 200px
+  width: 100%
+  line-height: 23px
+  font-size: 20px
+  margin: 0 0 60px
+  border: 2px dashed #00FF00
+    radius: 2px
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+
+  h3
+    font-weight: 700
+    min-height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.additionally-we-supply
+  margin: 0 0 20px
+
+  h4
+    font-weight: normal
+    margin: 0 0 10px
+
+  .wrapper
+    padding: 0 35px
+    justify-content: space-between
+    align-items: stretch
+
+.additionally-we-supply__box
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #fff
+  font-size: 20px
+  line-height: 23px
+  border: 5px dashed #FFFFFF
+  height: 270px
+  width: 20%
+  overflow: hidden
+  text-align: center
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(0, 255, 0, 0.4), rgba(0, 255, 0, 0.4))
+
+  p
+    position: absolute
+    left: 50%
+    top: 50%
+    z-index: 1
+    transform: translate(-50%, -50%)
+    -webkit-text-stroke-width: 0.1px
+    -webkit-text-stroke-color: #000
 
 
 @import "media"

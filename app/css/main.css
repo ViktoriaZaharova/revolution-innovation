@@ -76,7 +76,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: normal; }
 
 html, body {
@@ -109,7 +109,7 @@ input, textarea, select {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Arial", sans-serif; }
 
 button {
   outline: none;
@@ -117,7 +117,8 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: .3s ease;
-  transition: .3s ease; }
+  transition: .3s ease;
+  font-family: "Arial", sans-serif; }
 
 .container {
   width: 100%;
@@ -175,13 +176,13 @@ h2 {
   width: 100%;
   text-transform: uppercase;
   margin: 0 0 19px;
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: "Roboto", sans-serif; }
 
 h4 {
   width: 100%;
   margin: 0 0 20px;
   font-size: 20px;
-  font-family: "Arial", sans-serif;
   font-weight: bold; }
 
 header {
@@ -214,7 +215,6 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 22px;
-  font-family: "Arial", sans-serif;
   margin: 0 auto; }
   .menu li {
     margin: 0 46px 0 0; }
@@ -231,7 +231,6 @@ header {
   font-size: 20px;
   font-weight: bold;
   color: #000;
-  font-family: "Arial", sans-serif;
   margin: 0 12px 0 0; }
 
 .main-home {
@@ -257,8 +256,7 @@ main .container {
 .nav-main {
   max-width: 273px;
   width: 100%;
-  font-size: 12px;
-  font-family: "Arial", sans-serif; }
+  font-size: 12px; }
   .nav-main li {
     width: 100%; }
     .nav-main li a {
@@ -351,7 +349,8 @@ main .container {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 25px;
-  padding: 0 0 0 48px; }
+  padding: 0 0 0 48px;
+  font-family: "Roboto", sans-serif; }
   .strategy-box:first-child {
     margin: 0 95px 0 0; }
   .strategy-box:nth-child(even) {
@@ -456,8 +455,7 @@ footer {
   background: #EFEDF0;
   color: #777777;
   font-size: 15px;
-  line-height: 20px;
-  font-family: "Arial", sans-serif; }
+  line-height: 20px; }
   footer::before {
     content: '';
     position: absolute;
@@ -821,12 +819,16 @@ td {
           transform: translate(-50%, -50%);
   width: 100%; }
 
-.partners h2 {
-  font-size: 20px; }
-
-.partners .wrapper {
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+.partners {
+  font-family: "Arial", sans-serif; }
+  .partners h2 {
+    font-size: 20px; }
+  .partners .wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .partners p, .partners ul {
+    width: 100%;
+    display: block; }
 
 .fancybox-item {
   max-width: 500px;
@@ -975,6 +977,140 @@ td {
     -webkit-transform: skewX(-20deg) translate(-50%, 0);
             transform: skewX(-20deg) translate(-50%, 0); }
 
+.border-color-green:before {
+  border-color: #00FF00; }
+
+.application-effect {
+  margin: 10px 0 40px; }
+  .application-effect h4 {
+    font-weight: normal;
+    margin: 0 0 25px; }
+  .application-effect img {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto; }
+
+.list-dots {
+  list-style-type: disc;
+  padding: 0 0 0 20px; }
+
+.complex-technology {
+  margin: 60px 0 20px; }
+  .complex-technology h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0 0 60px; }
+  .complex-technology .wrapper {
+    padding: 0 10px 0 50px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+
+.complex-technology__img {
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.complex-technology__content {
+  width: calc(100% - 200px);
+  padding: 0 0 0 40px; }
+  .complex-technology__content h4 {
+    font-weight: 700;
+    margin: 20px 0 0; }
+
+.technology h4 {
+  font-weight: normal;
+  margin: 0 0 60px; }
+
+.technology .wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.technology-box {
+  text-align: center;
+  max-width: 400px;
+  min-height: 200px;
+  width: 100%;
+  line-height: 23px;
+  font-size: 20px;
+  margin: 0 0 60px;
+  border: 2px dashed #00FF00;
+    border-radius: 2px;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+  .technology-box h3 {
+    font-weight: 700;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.additionally-we-supply {
+  margin: 0 0 20px; }
+  .additionally-we-supply h4 {
+    font-weight: normal;
+    margin: 0 0 10px; }
+  .additionally-we-supply .wrapper {
+    padding: 0 35px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+
+.additionally-we-supply__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 23px;
+  border: 5px dashed #FFFFFF;
+  height: 270px;
+  width: 20%;
+  overflow: hidden;
+  text-align: center; }
+  .additionally-we-supply__box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 255, 0, 0.4)), to(rgba(0, 255, 0, 0.4)));
+    background: linear-gradient(0deg, rgba(0, 255, 0, 0.4), rgba(0, 255, 0, 0.4)); }
+  .additionally-we-supply__box p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #000; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1420px) {
@@ -1025,7 +1161,10 @@ td {
     max-width: 33%;
     font-size: 16px; }
     .working-conditions__box::before {
-      max-width: calc(100% - 90px); } }
+      max-width: calc(100% - 90px); }
+  .technology-box {
+    max-width: 32%;
+    font-size: 16px; } }
 
 @media only screen and (max-width: 1200px) {
   .list-social li a {
@@ -1079,7 +1218,9 @@ td {
   .tasks-item__content {
     width: calc(100% - 400px); }
   .category-productions__box {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .additionally-we-supply .wrapper {
+    padding: 0; } }
 
 @media only screen and (max-width: 992px) {
   .news-box {
@@ -1140,7 +1281,9 @@ td {
   .category-productions__box {
     max-width: 49%;
     margin: 0 0 20px;
-    height: 220px; } }
+    height: 220px; }
+  .additionally-we-supply__box {
+    width: 33.3%; } }
 
 @media only screen and (max-width: 860px) {
   header .menu {
@@ -1150,7 +1293,12 @@ td {
     display: -ms-flexbox;
     display: flex; }
   .about-history-box {
-    max-width: 50%; } }
+    max-width: 50%; }
+  .technology-box {
+    max-width: 49%;
+    margin: 0 0 30px; }
+  .technology h4 {
+    margin: 0 0 30px; } }
 
 @media only screen and (max-width: 768px) {
   .news-box {
@@ -1190,7 +1338,9 @@ td {
               order: 0;
       padding: 0; }
   .fancybox-item {
-    margin: 0 0 30px; } }
+    margin: 0 0 30px; }
+  .complex-technology .wrapper {
+    padding: 0; } }
 
 @media only screen and (max-width: 575px) {
   header .list-social {
@@ -1229,7 +1379,15 @@ td {
     max-width: none;
     min-height: 220px; }
   .partners-company__logo {
-    width: 33.3%; } }
+    width: 33.3%; }
+  .complex-technology__content {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 0; }
+  .complex-technology__img {
+    margin: 0 auto; }
+  .complex-technology h4 {
+    margin: 0 0 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -1237,7 +1395,12 @@ td {
     height: 170px; }
   .category-productions__box {
     max-width: none;
-    height: 180px; } }
+    height: 180px; }
+  .additionally-we-supply__box {
+    width: 50%;
+    height: 220px; }
+  .technology-box {
+    max-width: 100%; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
