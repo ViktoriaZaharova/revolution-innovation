@@ -174,6 +174,10 @@
   .we-supply .wrapper
     padding: 0
 
+  .article .container
+    padding: 0 20px
+
+
 @media only screen and (max-width: 992px)
   .news-box
     width: 24%
@@ -272,6 +276,25 @@
     margin: 0 0 30px
     max-width: 19%
     font-size: 14px
+
+  .news-item
+    margin: 0 0 30px
+    font-size: 16px
+
+  .btn
+    font-size: 16px
+
+  .article-img
+    max-width: 280px
+    height: 280px
+
+  .article-content
+    width: calc(100% - 280px)
+    padding: 0 0 0 20px
+
+  h1
+    margin: 0 0 30px
+    font-size: 24px
 
 @media only screen and (max-width: 860px)
   header .menu
@@ -388,6 +411,32 @@
   .advantages
     margin: 30px 0
 
+  .news-item__content
+    width: 100%
+    padding: 0
+    margin: 20px 0 0
+    height: auto
+
+  .news-item__img
+    margin: 0 auto
+    height: 200px
+
+  .line-wrapper
+    margin: 30px 0 0
+
+  .news-page
+    margin: 0 0 50px
+
+  .article-content
+    width: 100%
+    padding: 0
+
+  .article-img
+    margin: 0 auto 20px
+
+  .article
+    margin: 0 0 40px
+
 @media only screen and (max-width: 575px)
   header .list-social
     display: none
@@ -498,3 +547,9 @@
     min-height: 160px
     height: auto
     padding: 10px
+
+  .line-wrapper
+    flex-direction: column
+    .btn
+      margin: 10px auto 0
+      order: 1
